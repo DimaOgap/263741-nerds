@@ -35,15 +35,64 @@
 	<main class="container">
 		<h1 class="page-title">Магазин готовых шаблонов</h1>
 		<section class="sidebar-filters">
-				<div class="form-price">
-					<form></form>
-				</div>
-				<div class="form-grid">
-					<form></form>
-				</div>
-				<div class="form-feature">
-					<form></form>
-				</div>
+			<div class="form-price">
+				<form></form>
+			</div>
+			<div class="form-grid">
+				<form class="form-grid-radio">
+					<fieldset>
+						<legend>Сетка</legend>
+						<ul class="form-grid-radio__list">
+							<li class="form-grid-radio__item">
+								<input type="radio" name="form-grid-radio__item" id="form-grid-radio__item-adaptive" checked>Адаптивная
+								<label for="form-grid-radio__item-adaptive"></label>
+							</li>
+							<li class="form-grid-radio__item">
+								<input type="radio" name="form-grid-radio__item" id="form-grid-radio__item-fixed">Фиксированная
+								<label for="form-grid-radio__item-fixed"></label>
+							</li>
+							<li class="form-grid-radio__item">
+								<input type="radio" name="form-grid-radio__item" id="form-grid-radio__item-ruber">Резиновая
+								<label for="form-grid-radio__item-rubber"></label>
+							</li>
+						</ul>
+					</fieldset>
+				</form>
+			</div>
+			<div class="form-feature">
+				<form class="form-feature-checkbox">
+					<fieldset>
+						<legend>Особенности</legend>	
+						<ul class="form-feature-checkbox__list">
+							<li class="form-feature-checkbox__item">
+								<input type="checkbox" name="slider" 
+								id="form-feature-checkbox__item-slider" checked>
+								<label for="feature-checkbox__item-slider">Слайдер</label>
+							</li>
+							<li class="form-feature-checkbox__item">
+								<input type="checkbox" name="advantages"  id="form-feature-checkbox__item-advantages">
+								<label for="form-feature-checkbox__item-advantages">Блок преимуществ</label>
+							</li>
+							<li class="form-feature-checkbox__item">
+								<input type="checkbox" name="news" 
+								id="form-feature-checkbox__item-news" checked>
+								<label for="form-feature-checkbox__item-news">Новости</label>
+							</li>
+							<li class="form-feature-checkbox__item">
+								<input type="checkbox" name="gallery" 
+								id="form-feature-checkbox__item-gallery">
+								<label for="form-feature-checkbox__item-gallery">Галерея</label>	
+							</li>
+							<li class="form-feature-checkbox__item">
+								<input type="checkbox" name="basket" 
+								id="form-feature-checkbox__item-basket">
+								<label for="form-feature-checkbox__item-basket">Корзина</label>	
+							</li>
+						</ul>
+					</fieldset>
+				</form>
+			</div>
+			<button type="submit">Показать</button>
 		</section>
 		<section class="filters">
 			<h2 class="visually-hidden">Сортировка шаблонов</h2>
@@ -80,7 +129,7 @@
 				<a class="contacts-link" href="#">Напишите нам</a>
 			</div>
 			<div class="contacts-map">
-				<img src="http://joxi.ru/RmzGZPWCWPzp42.jpg" width="1725px" height="808px" alt="наше расположение на карте">
+				<img src="http://i12.pixs.ru/storage/2/8/4/writeusjpg_6012266_29597284.jpg" width="1725px" height="808px" alt="наше расположение на карте">
 			</div>
 		</section>
 		<section class="social">
