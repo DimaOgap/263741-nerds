@@ -1,130 +1,174 @@
-<<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
 	<title>Каталог товара</title>
 </head>
 <body>
 	<header class="header">
-		<a class="header-logo"href="">
-			<img class="header-logo__img src="#" width="" height="" alt="Логотип компании Нёрдс">
+		<a class="header-logo" href="#">
+			<img class="header-logo__img" src="" width="" height="" alt="Логотип компании Нёрдс">
 		</a>
 		<nav class="navigation">
 			<ul class="navigation-list">
-				<li class="navigation-list__item">
-					<a class="navigation-list__link">Студия</a> 
-				</li>
-				<li class="navigation-list__item">
-					<a class="navigation-list__link">Клиенты</a>
-				</li>
-				<li class="navigation-list__item">
-					<a class="navigation-list__link">Магазин</a>
-				</li>
-				<li class="navigation-list__item">
-					<a class="navigation-list__link">Контакты</a>
-				</li>
+				<li class="navigation-list__item"><a href="#" class="navigation-list__link">Студия</a></li>
+				<li class="navigation-list__item"><a href="#" class="navigation-list__link">Клиенты</a></li>
+				<li class="navigation-list__item"><a href="#" class="navigation-list__link">Магазин</a></li>
+				<li class="navigation-list__item"><a href="#" class="navigation-list__link">Контакты</a></li>
 			</ul>
 		</nav>
 		<ul class="basket-list">
-			<li class="basket-list__item">
-				<a class="basket-list__link" href="#">Корзина</a>
-			</li>
+			<li class="basket-list__item"><a class="basket-list__link" href="#">Корзина</a></li>
 		</ul>
 	</header>
 
 	<main class="container">
 		<h1 class="page-title">Магазин готовых шаблонов</h1>
 		<section class="sidebar-filters">
-			<div class="form-price">
-				<form>
-					 <h2>Стоимость</h2>
-					<label for="price"></label>
-                    0 <input type="range" id="price" name="price" min="0" max="15000" step="1"> 15000
-                
-                              
-				</form>
-			</div>
-			<div class="form-grid">
-				<form class="form-grid-radio">
-					<fieldset>
-						<legend>Сетка</legend>
-						<ul class="form-grid-radio__list">
-							<li class="form-grid-radio__item">
-								<input type="radio" name="form-grid-radio__item-radio" id="form-grid-radio__item-adaptive" checked>Адаптивная
-								<label for="form-grid-radio__item-adaptive"></label>
-							</li>
-							<li class="form-grid-radio__item">
-								<input type="radio" name="form-grid-radio__item-radio" id="form-grid-radio__item-fixed">Фиксированная
-								<label for="form-grid-radio__item-fixed"></label>
-							</li>
-							<li class="form-grid-radio__item">
-								<input type="radio" name="form-grid-radio__item-radio" id="form-grid-radio__item-ruber">Резиновая
-								<label for="form-grid-radio__item-rubber"></label>
-							</li>
-						</ul>
-					</fieldset>
-				</form>
-			</div>
-			<div class="form-feature">
-				<form class="form-feature-checkbox">
-					<fieldset>
-						<legend>Особенности</legend>	
-						<ul class="form-feature-checkbox__list">
-							<li class="form-feature-checkbox__item">
-								<input type="checkbox" name="slider" 
-								id="form-feature-checkbox__item-slider" checked>
-								<label for="feature-checkbox__item-slider">Слайдер</label>
-							</li>
-							<li class="form-feature-checkbox__item">
-								<input type="checkbox" name="advantages"  id="form-feature-checkbox__item-advantages">
-								<label for="form-feature-checkbox__item-advantages">Блок преимуществ</label>
-							</li>
-							<li class="form-feature-checkbox__item">
-								<input type="checkbox" name="news" 
-								id="form-feature-checkbox__item-news" checked>
-								<label for="form-feature-checkbox__item-news">Новости</label>
-							</li>
-							<li class="form-feature-checkbox__item">
-								<input type="checkbox" name="gallery" 
-								id="form-feature-checkbox__item-gallery">
-								<label for="form-feature-checkbox__item-gallery">Галерея</label>	
-							</li>
-							<li class="form-feature-checkbox__item">
-								<input type="checkbox" name="basket" 
-								id="form-feature-checkbox__item-basket">
-								<label for="form-feature-checkbox__item-basket">Корзина</label>	
-							</li>
-						</ul>
-					</fieldset>
-				</form>
-			</div>
-			<button type="submit">Показать</button>
+			<form action="https://echo.htmlacademy.ru" method="get">
+				<fieldset>
+					<legend>Стоимость</legend>
+					<p><label for="price">0<input type="range" id="price" name="price" min="0" max="15000" step="1">15000</label></p>
+					<p><label for="price-from">от</label><input type="text" name="price-from" id="login" value="0"></p>
+					<p><label for="price-to">до</label><input type="text" name="price-to" id="login" value="15000"></p>
+				</fieldset>
+				<fieldset>
+					<legend>Сетка</legend>
+					<ul class="form-grid-radio__list">
+						<li class="form-grid-radio__item">
+							<input type="radio" name="form-grid-radio__item-radio" id="form-grid-radio__item-adaptive" checked>
+							<label for="form-grid-radio__item-adaptive">Адаптивная</label>
+						</li>
+						<li class="form-grid-radio__item">
+							<input type="radio" name="form-grid-radio__item-radio" id="form-grid-radio__item-fixed">
+							<label for="form-grid-radio__item-fixed">Фиксированная</label>
+						</li>
+						<li class="form-grid-radio__item">
+							<input type="radio" name="form-grid-radio__item-radio" id="form-grid-radio__item-ruber">
+							<label for="form-grid-radio__item-rubber">Резиновая</label>
+						</li>
+					</ul>
+				</fieldset>
+				<fieldset>
+					<legend>Особенности</legend>	
+					<ul class="form-feature-checkbox__list">
+						<li class="form-feature-checkbox__item">
+							<input type="checkbox" name="slider" 
+							id="form-feature-checkbox__item-slider" checked>
+							<label for="feature-checkbox__item-slider">Слайдер</label>
+						</li>
+						<li class="form-feature-checkbox__item">
+							<input type="checkbox" name="advantages" id="form-feature-checkbox__item-advantages">
+							<label for="form-feature-checkbox__item-advantages">Блок преимуществ</label>
+						</li>
+						<li class="form-feature-checkbox__item">
+							<input type="checkbox" name="news" id="form-feature-checkbox__item-news" checked>
+							<label for="form-feature-checkbox__item-news">Новости</label>
+						</li>
+						<li class="form-feature-checkbox__item">
+							<input type="checkbox" name="gallery" id="form-feature-checkbox__item-gallery">
+							<label for="form-feature-checkbox__item-gallery">Галерея</label>	
+						</li>
+						<li class="form-feature-checkbox__item">
+							<input type="checkbox" name="basket" id="form-feature-checkbox__item-basket">
+							<label for="form-feature-checkbox__item-basket">Корзина</label>	
+						</li>
+					</ul>
+				</fieldset>
+				<button type="submit">Показать</button>
+			</form>
 		</section>
+
 		<section class="filters">
 			<h2 class="visually-hidden">Сортировка шаблонов</h2>
-			<span></span>
-			<span></span>
+			<form>
+				<fieldset>
+					<legend>Сортировать</legend>	
+					<ul class="form-feature-filters__list">
+						<li class="form-feature-filters__item">
+							<button type="button">По цене</button>
+						</li>
+						<li class="form-feature-filters__item">
+							<button type="button">По типу</button>
+						</li>
+						<li class="form-feature-filters__item">
+							<button type="button">По названию</button>
+						</li>
+					</ul>
+				</fieldset>
+				<ul>
+					<li>
+						<button type="button" aria-label="кнопка сортировки по возрастанию"></button>
+					</li> 
+					<li>
+						<button type="button" aria-label="кнопка сортировки по убыванию"></button>
+					</li>
+				</ul>
+			</form>	
 		</section>
+
 		<section class="catalog">
 			<h2 class="visually-hidden">Список шаблонов</h2>
 			<ul class="catalog-list">
-				<li class="catalog-list__item"></li> 
-				<li class="catalog-list__item"></li>  
-				<li class="catalog-list__item"></li> 
-				<li class="catalog-list__item"></li> 
-				<li class="catalog-list__item"></li> 
-				<li class="catalog-list__item"></li>
+				<li class="catalog-list__item">
+					<img class="catalog-list__item-img" src="">
+					<div class="catalog-content__visually-hidden">
+						<h3 class="catalog-list__item-title"></h3>
+						<p class="catalog-list__item-text"></p>
+						<a class="catalog-list__item-link" href="#"></a>
+					</div>
+
+				</li> 
+				<li class="catalog-list__item">
+					<img class="catalog-list__item-img" src="">
+					<div class="catalog-content__visually-hidden">
+						<h3 class="catalog-list__item-title"></h3>
+						<p class="catalog-list__item-text"></p>
+						<a class="catalog-list__item-link" href="#"></a>
+					</div>
+				</li>  
+				<li class="catalog-list__item">
+					<img class="catalog-list__item-img" src="">
+					<div class="catalog-content__visually-hidden">
+						<h3 class="catalog-list__item-title"></h3>
+						<p class="catalog-list__item-text"></p>
+						<a class="catalog-list__item-link" href="#"></a>
+					</div>
+				</li> 
+				<li class="catalog-list__item">
+					<img class="catalog-list__item-img" src="">
+					<div class="catalog-content__visually-hidden">
+						<h3 class="catalog-list__item-title"></h3>
+						<p class="catalog-list__item-text"></p>
+						<a class="catalog-list__item-link" href="#"></a>
+					</div>
+				</li> 
+				<li class="catalog-list__item">
+					<img class="catalog-list__item-img" src="">
+					<div class="catalog-content__visually-hidden">
+						<h3 class="catalog-list__item-title"></h3>
+						<p class="catalog-list__item-text"></p>
+						<a class="catalog-list__item-link" href="#"></a>
+					</div>
+				</li> 
+				<li class="catalog-list__item">
+					<img class="catalog-list__item-img" src="">
+					<div class="catalog-content__visually-hidden">
+						<h3 class="catalog-list__item-title"></h3>
+						<p class="catalog-list__item-text"></p>
+						<a class="catalog-list__item-link" href="#"></a>
+					</div>
+				</li>
 			</ul>
 			<div class="pagination">
 				<button class="pagination__btn">1</button>
 				<button class="pagination__btn">2</button>
 				<button class="pagination__btn">3</button>
-				<button class="pagination__btn">Следующая
-				</button>
+				<button class="pagination__btn">Следующая</button>
 			</div>
 		</section>
-		
 	</main>
+
 	<footer class="footer">
 		<section class="contacts">
 			<h2 class="visually-hidden">Контакты</h2>
@@ -135,30 +179,46 @@
 				<a class="contacts-link" href="#">Напишите нам</a>
 			</div>
 			<div class="contacts-map">
-				<img src="http://i12.pixs.ru/storage/2/8/4/writeusjpg_6012266_29597284.jpg" width="1725px" height="808px" alt="наше расположение на карте">
+				<img src="" width="1725px" height="808px" alt="наше расположение на карте">
 			</div>
 		</section>
+
 		<section class="social">
 			<h2 class="visually-hidden">Мы в социальных сетях</h2>
 			<ul class="social-list">
 				<li class="social-list__item">
-					<a class="social-list__link" href="#">Вконтакте</a>
+					<a class="social-list__link" href="#">
+						<span class="social-list__link-title">Вконтакте</span>
+						<img class="social-list__link-img"src="">
+					</a>
 				</li>
 				<li class="social-list__item">
-					<a class="footer-social-list__link" href="#">Фейсбук</a>
+					<a class="footer-social-list__link" href="#">
+						<span class="social-list__link-title">Фейсбук</span>
+						<img class="social-list__link-img"src="">
+					</a>
 				</li>
 				<li class="social-list__item">
-					<a class="social-list__link" href="#">Инстаграм</a>
+					<a class="social-list__link" href="#">
+						<span class="social-list__link-title">Инстаграм</span>
+						<img class="social-list__link-img"src="">
+					</a>
 				</li>
 			</ul>
 			<b class="social-title">Давайте дружить, это выгодно!</b>
 			<p class="social-text">Скидка 10% для друзей из социальных сетей.</p>
 		</section>
 	</footer>
+
 	<div class="modal-feedback">
 		<h2 class="modal-feedback__title">Напишите нам</h2>
-		<!-- Здесь будет форма -->
-		<span class="modal-close">x</span>
+		<button type="button" class="modal-close">x</button>
+		<form action="https://echo.htmlacademy.ru" method="get">
+			<label for="modal-feedback-login"> Ваше имя<br><input type="text" name="modal-feedback-login" id="login" placeholder="Имя фамилия"></label><br>
+			<label for="modal-feedback-email">Ваш e-mail:<br><input type="email" name="modal-feedback-email" id="modal-feedback-email" placeholder="email@example.com"></label><br>
+			<label for="modal-feedback-textarea">Текст письма:<br>	<textarea name="modal-feedback-submit" id="modal-feedback-textarea" cols="40" rows="3" placeholder="В свободной форме"></textarea></label><br>
+			<input type="submit" value="Отправить">
+		</form>
 	</div>
 </body>
 </html>
