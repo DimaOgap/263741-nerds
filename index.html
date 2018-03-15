@@ -172,10 +172,19 @@
 	<div class="modal-feedback">
 		<h2 class="modal-feedback__title">Напишите нам</h2>
 		<button type="button" class="modal-close">x</button>
-		<form action="https://echo.htmlacademy.ru" method="get">
-			<label for="modal-feedback-login"> Ваше имя<br><input type="text" name="modal-feedback-login" id="login" placeholder="Имя фамилия"></label><br>
-			<label for="modal-feedback-email">Ваш e-mail:<br><input type="email" name="modal-feedback-email" id="modal-feedback-email" placeholder="email@example.com"></label><br>
-			<label for="modal-feedback-textarea">Текст письма:<br>	<textarea name="modal-feedback-submit" id="modal-feedback-textarea" cols="40" rows="3" placeholder="В свободной форме"></textarea></label><br>
+		<form class="contact-form" action="https://echo.htmlacademy.ru" method="get">
+			<p>
+				<label for="name"> Ваше имя</label>
+				<input type="text" name="contact-name" id="name" placeholder="Имя фамилия"></label>
+			</p>
+			<p>
+				<label for="email">Ваш e-mail:</label>
+				<input type="email" name="email" id="email" placeholder="email@example.com"></label>
+			</p>
+			<p>
+				<label for="message">Текст письма:</label>
+				<textarea name="message" id="message" placeholder="В свободной форме"></textarea>
+			</p>
 			<input type="submit" value="Отправить">
 		</form>
 	</div>
