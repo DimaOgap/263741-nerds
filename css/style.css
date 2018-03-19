@@ -1,20 +1,91 @@
 body {
-    margin: 0;
-    padding: 0;
-    background-color: white;
-    color: black;
-    font-family: Roboto, Arial, sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 22px;
-}
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
+  margin: 0;
   padding: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+  background-color: white;
+  color: black;
+  font-family: Roboto, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+
+  background-color: #ffffff;
+  background-image: url("");
+  background-position: top center;
+  background-repeat: no-repeat;
 }
+a {
+  text-decoration: none;
+}
+
+
+.navigation-list {
+  font-size: 16px;
+  line-height: 30px;
+  color: #000000;
+  background-color: #ffffff;
+}
+.navigation-list{
+  list-style: none;
+}
+.navigation-list a,
+.basket-list a{
+  color:#000000;
+}
+.basket-list{
+  list-style: none;
+}
+
+.navigation-list a:hover{
+  color:#fb565a;
+}
+
+.basket-list a:hover{
+    color:#fb565a;
+}
+.navigation-list a:focus{
+  color: #afafaf;
+
+}
+.basket-list a:hover{
+  color: #afafaf;
+}
+.navigation-list a:active{
+  color: #3f3f3f;
+
+}
+.basket-list a:active{
+  color: #3f3f3f;
+}
+.services-list__item{
+  list-style: none;
+}
+.slider-content__title{
+font-size: 55px;
+}
+.slider-content__text{
+
+}
+.slide__link{
+  padding: 10px;
+  color: #ffffff;
+  background-color:#fb565a;
+}
+.services-list{
+  display: flex;
+}
+.about-us{
+   display: flex;
+  
+ }
+ .partners-list{
+  display: flex;
+  justify-content:space-around;
+ }
+ .partners-list li{
+  list-style: none;
+ }
+
+
+
+
