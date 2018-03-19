@@ -17,13 +17,18 @@ body {
 a {
   text-decoration: none;
 }
-
+.header {
+  display: flex;
+  justify-content: space-around;
+  background-color: #eeeeee;
+}
 
 .navigation-list {
+  display: flex;
   font-size: 16px;
   line-height: 30px;
   color: #000000;
-  background-color: #ffffff;
+  
 }
 .navigation-list{
   list-style: none;
