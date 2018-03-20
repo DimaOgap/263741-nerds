@@ -17,6 +17,7 @@ body {
 a {
   text-decoration: none;
 }
+
 .header {
   display: flex;
   justify-content: space-around;
@@ -25,10 +26,13 @@ a {
 
 .navigation-list {
   display: flex;
+  flex-wrap: wrap;
+  width: 440px;
+  justify-content: space-between;
   font-size: 16px;
   line-height: 30px;
   color: #000000;
-  
+  padding-left: 0;
 }
 .navigation-list{
   list-style: none;
@@ -52,7 +56,7 @@ a {
   color: #afafaf;
 
 }
-.basket-list a:hover{
+.basket-list a:focus{
   color: #afafaf;
 }
 .navigation-list a:active{
@@ -62,8 +66,14 @@ a {
 .basket-list a:active{
   color: #3f3f3f;
 }
+.slider{
+  display: flex;
+}
 .services-list__item{
   list-style: none;
+}
+.slider{
+  display: flex;
 }
 .slider-content__title{
 font-size: 55px;
@@ -90,7 +100,55 @@ font-size: 55px;
  .partners-list li{
   list-style: none;
  }
+ .contacts-info a{
+  font: inherit;
+  background-color:#fb565a;
+  color:#ffffff;
+ }
 
+ .contacts{
+  position: relative;
+ }
+
+ .contacts-info{
+  position: absolute;
+  top: 100px;
+  left: 100px;
+
+
+}
+.modal-feedback__title{
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="password"] {
+  font: inherit;
+  color: #000000;
+  text-transform: uppercase;
+  background-color: #f9f6f3;
+  border: 2px solid #000000;
+}
+
+.login-form input:focus {
+  border-color: #663d15;
+}
+
+.login-checkbox:hover,
+.login-checkbox:focus {
+  color: #663d15;
+}
+
+.restore {
+  color: #000000;
+  text-decoration: underline;
+}
+
+.restore:hover,
+.restore:focus {
+  text-decoration: none;
+}
 
 
 
