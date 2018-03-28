@@ -153,21 +153,21 @@
 		    </div>
 		    <div class="modal-feedback active">
 				<h2 class="modal-feedback__title">Напишите нам</h2>
-				<button type="button" class="modal-close">x</button>
+				<button type="button" class="modal-close">X</button>
 				<form class="contact-form" action="https://echo.htmlacademy.ru" method="get">
-					<p>
+					<div class="name">
 						<label for="name"> Ваше имя</label>
 						<input type="text" name="contact-name" id="name" placeholder="Имя фамилия"></label>
-					</p>
-					<p>
+					</div>
+					<div class="email">
 						<label for="email">Ваш e-mail:</label>
 						<input type="email" name="email" id="email" placeholder="email@example.com"></label>
-					</p>
-					<p>
+					</div>
+					<div class="message">
 						<label for="message">Текст письма:</label>
-						<textarea name="message" id="message" placeholder="В свободной форме"></textarea>
-					</p>
-					<input type="submit" value="Отправить">
+						<textarea name="message" id="message" cols="95" rows="5" placeholder="В свободной форме"></textarea>
+					</div>
+					<input class="btn-send" type="submit" value="Отправить">
 				</form>
 			</div>
 		</section>
@@ -179,31 +179,27 @@
 			<div class="footer-social container">
 				<ul class="social-list">
 					<li class="social-list__item circle">
-						<a class="social-list__link" href="#">
+						<a class="social-list__link" href="https://vk.com/" target="_blank">
 							<span class="visually-hidden">Вконтакте</span>
-							<img class="social-list__link-img" src="img/icon/vk-icon.png" width="26px" height="15px">
 						</a>
 					</li>
 					<li class="social-list__item circle">
-						<a class="footer-social-list__link " href="#">
+						<a class="social-list__link" href="https://www.facebook.com/" target="_blank">
 							<span class="visually-hidden">Фейсбук</span>
-							<img class="social-list__link-img" src="img/icon/fb-icon.png" width="12px" height="22px">
-					</a>
-				</li>
-				<li class="social-list__item circle">
-					<a class="social-list__link" href="#">
-						<span class="visually-hidden">Инстаграм</span>
-						<img class="social-list__link-img" src="img/icon/insta-icon.png" width="21px" height="21px">
-					</a>
-				</li>
+						</a>
+					</li>
+					<li class="social-list__item circle">
+						<a class="social-list__link" href="https://instagram.com/" target="_blank">
+							<span class="visually-hidden">Инстаграм</span>
+						</a>
+					</li>
 			</ul>
 			<div class="social-container">
 				<b class="social-title">Давайте дружить, это выгодно!</b>
 				<p class="social-text">Скидка 10% для друзей из социальных сетей.</p>
 			</div>
 		</div>
-	</section>
-
+  </section>
 </footer>
 </body>
 </html>
